@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Coca-Cola</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+
+    
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+        font-family: "Kanit", sans-serif;
+        font-style: normal;
+        border: none;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    #nav-second{
+        padding: 3rem 12rem;
+    }
+
+    ul li a{ 
+        font-family: "Kanit", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.8rem;
+        color: black;
+       
+        
+    }
+    ul li{
+        padding: .2rem 0;
+    }
+
+    li{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+    .border{
+        height: 1px;
+        border: 1px sloid rgb(164, 161, 161);
+        background: rgb(210, 208, 208);
+        margin: 4rem 0 2rem;
+    }
+
+    .x-bar .cross{
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem 2rem;
+        color: black;
+        transition: ease-in-out;
+
+    }
+
+    #nav-second p{
+        font-weight: 400;
+        color: grey;
+        font-size: 1.2rem;
+        margin: 0 0 2rem;
+    }
+    .default{
+        width: 20rem;
+        height: 2.5rem;
+        color: var(--black);
+        background: var(--white);
+        border: 2px solid black;
+        border-radius: 56px;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .default:hover{
+        background: grey;
+    }
+
+
+
+
+</style>
+<body>
+    <div class="x-bar">
+        <a href="./index.html"> <i class="fa-solid fa-x cross"></i></a>
+    </div>
+    <div id="nav-second">
+        <ul class="menu-link">
+            <li><a class="brand"href="#">Brands</a></li>
+            <li><a href="#">Discover</a><i id="i" class="fa-solid fa-angle-right"></i></li>
+            <li><a href="#">Impact</a><i id="i" class="fa-solid fa-angle-right"></i></li>
+            <li><a href="#">Shop</a><i id="i" class="fa-solid fa-angle-right"></i></li>
+        </ul>
+        <div class="border"></div>
+        <p>select location</p>
+        <button type="button" class="footer-btn default"><i class="fa-solid fa-location-dot"></i> India | English</button>
+    </div> 
+
+    
+
+    <script>
+        
+
+
+
+        function rotate(){
+            style.rotate = "50deg";
+        }
+
+        document.getElementById("i").addEventListener("click", rotate)
+    </script>
+</body>
+</html>

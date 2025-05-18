@@ -1,0 +1,47 @@
+
+
+
+div{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+body{
+    background: url("./images/coke-marvel.webp");
+   
+    background-size: fill;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+   
+}
+
+.container{
+    text-align: center;
+    display: flex;
+    margin-top: 8rem;
+}
+
+ul li{
+    margin-top: 2rem;
+}
+
+ul i{
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.desktop__nav{
+    margin-top: 5rem;
+}
+
+.menu-arrow-down {
+    transform: rotate(0deg);
+    transition: 1s linear;
+}
+  
+.menu-arrow-down.open {
+    transform: rotate(180deg);
+    transition: 1s linear;
+}

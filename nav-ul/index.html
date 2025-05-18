@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<style>
+.html{
+    color: navy;
+}
+
+.fa-angle-right {
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+}
+  
+.fa-angle-right.open {
+    transform: rotate(90deg);
+    transition: .5s ease-in-out;
+
+}
+
+#sub-links{
+    display: none;
+}
+
+
+
+</style>
+<body>
+    
+
+    <div id="nav-links">
+        <div class="parent">
+            <a href="#">Brands</a>
+        </div>
+        <div class="parent">
+            <a href="#">Discover</a>
+            <!-- <img id="icon" src="" alt=""> -->
+            <i href="javascript: toggleChildren('listItem')" class="icon fa-solid fa-angle-right"></i>
+            <ul id ="sub-links">
+                <li><a href="#">Coke Epic Battle</a></li> 
+                <li><a href="#">Coke Studio Bharat</a></li>
+                <li><a href="#">Sprite Joke In A Bottle</a></li>
+
+            </ul>
+
+        </div>
+        <div class="parent">
+            <a href="#">Impact</a>
+            <!-- <img id="icon" src="" alt=""> -->
+            <i class="icon fa-solid fa-angle-right"></i>
+            <ul id ="sub-links">
+                <li><a href="#">Sustainability</a></li>
+            </ul>
+        </div>
+        <div class="parent">
+            <a href="#">Shop</a>
+            <!-- <img id="icon" src="" alt=""> -->
+            <i class="icon fa-solid fa-angle-right"></i>
+            <ul id ="sub-links">
+                <li><a href="#">Big Basket</a></li>
+                <li><a href="#">Blinkit</a></li>
+                <li><a href="#">FlipKart</a></li>
+                <li><a href="#">Jiomart</a></li>
+                <li><a href="#">Amazon</a></li>
+               
+            </ul>
+        </div>
+    </div> 
+
+
+
+    <script>
+    
+    document.getElementById("nav-links").addEventListener("click", function(e) {
+        const turn = e.target;
+        if (turn.classList.contains('fa-angle-right')) { // make sure we only target elements with this class
+            turn.classList.toggle('open');
+            listItem.style.display = "block"
+        }
+    });
+
+d
+
+    
+
+
+
+
+        
+    </script>
+</body>
+</html>

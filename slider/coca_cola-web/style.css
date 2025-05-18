@@ -1,0 +1,969 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap');
+
+
+/* 
+.kanit-light {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kanit-medium {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kanit-semibold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.kanit-bold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.kanit-extrabold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+ */
+
+@font-face{
+    font-family: myfont;
+    src: url(./fonts/LOKICOLA.TTF);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+
+
+}
+
+html{
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    background: var(--grey);
+  
+
+    
+}
+
+:root{
+    --white:white;
+    --black:black;
+    --transition:all 300ms linear;
+    --grey:rgb(228, 224, 224);
+    --big-width:87%;
+    --transition:all 300ms linear;
+}
+
+.container{
+    max-width: 100%;
+  
+}
+
+
+
+section{
+    padding: 3rem 3rem 3rem;
+    
+} 
+
+.default{
+   
+    width: 20rem;
+    height: 2.5rem;
+    color: var(--black);
+    background: var(--white);
+    border: none;
+    border-radius: 56px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.default:hover{
+    background: grey;
+}
+
+
+h1{
+    text-align: center;
+    padding: 6rem 0 6rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+img{
+    border-radius: .9rem;
+}
+
+.para{
+    font-size: 1.2rem;
+    color: rgb(78, 77, 77);
+}
+
+
+/* nav */
+
+nav{
+    width: 100%;
+    height: 5rem;
+    padding: 2rem .5rem 0;
+    background: var(--white);
+   
+    
+    
+   
+}
+nav a {
+    color: var(--black);
+
+}
+
+nav .container span{
+    font-family: myfont;
+    font-size: 1.3rem;
+    padding: 0 .2rem 0;
+    
+}
+
+.logo{
+    font-size: .5rem;
+    padding-left: 2rem;
+
+}
+
+nav .container{
+    display: flex;
+    justify-content: start;
+    gap: 4rem;
+    
+}
+
+nav ul {
+    display: flex;
+    gap: 2.7rem;
+
+
+}
+   
+
+nav ul i{
+    margin-left: .5rem;
+    font-weight: 100;
+    font-size: .9rem;
+}
+
+nav .fa-bars{
+    display: none;
+    font-size: 1.5rem;
+}
+
+
+nav .fa-x{
+    display: none;
+    font-size: 1.5rem;
+}
+
+#nav-button{
+    display: flex;
+}
+
+#nav-second{
+    display: none;
+}
+
+/* swiper */
+main{
+    padding: 2rem 0 0;
+}
+
+.swiper-slide{
+    padding-bottom: 5rem;
+    width: 100%;
+    height: 100vh;
+
+   
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+}
+
+
+.image{
+    position: relative;
+   
+  
+}
+.slide-info{
+    position: absolute;
+    text-align: center;
+    margin-top: -25rem;
+    left: 22rem;
+     
+}
+
+.slide-info p{
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    color: black;
+    
+   
+}
+
+.swiper-pagination-bullet {
+    color: black;
+    padding: .5rem;
+    background-color: black;
+   
+    
+}
+.swiper-pagination-bullet-active {
+    border: 2px solid black;
+    
+   
+}
+
+.slide-wrapper-two{
+    display: none;
+}
+
+
+/* second */
+.second-section{
+    background: var(--grey);
+   
+    
+}
+
+.second-section h1{
+    text-align: center;
+    /* padding: 6rem 0 6rem; */
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.second{
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+}
+
+.second .title{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    
+
+}
+.second .title h1{
+    text-align: left;
+    /* padding: 3rem 2rem .5rem;  */
+    padding-bottom: .5rem;
+    
+
+}
+.second .title .second-btn{
+    border: 2px solid black;
+    align-self: self-start;
+}
+
+
+.second .image img{
+    width: 550px;
+    height: 480px;
+    border-radius: .9rem;
+
+}
+
+
+/* section third */
+
+
+.third-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+.third{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 0 3rem;
+}
+
+.card{
+    background: var(--white);
+    border-radius: .9rem;
+    height: 45rem;
+
+}
+
+.card .image img{
+   border-start-start-radius: .9rem;
+   border-top-right-radius: .9rem;
+}
+
+.card .heading{
+    padding: 2rem;
+}
+
+.card .heading a{
+    
+    color: black;
+    font-size: 1.2rem;
+}
+
+.card .heading i{
+    margin-left: 1rem;
+    
+} 
+
+/* four */
+.four-section{
+    margin-top: 8rem;
+   
+}
+
+.four{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 3rem;
+    
+}
+
+
+.four aside{
+    width: 500px;
+    height: 500px;
+    background: white;
+    padding: 4rem;
+    margin-top: -5rem;
+    border-radius: .9rem;
+
+}
+
+.four-btn{
+    border: 2px solid black;
+}
+
+/* five */
+
+.five-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.five{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  
+}
+ 
+
+.image-logo img{
+    width: 180px;
+
+}
+
+.image-logo{
+    border: 2rem solid white;
+    background: white;
+    border-radius: 1rem;
+}
+
+.five-btn{
+    background: black;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* sixth */
+
+
+.six-section{
+    padding: 0 5rem 0;
+   
+}
+
+.six p{
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    text-align: left;
+    color: rgb(31, 30, 30);
+}
+
+/* footer */
+
+footer{
+    color: white;
+    list-style: none;
+    background: black;
+    padding: 5rem;
+    margin-top: 10rem;
+    
+}
+
+footer span{
+    font-family: myfont;
+    font-size: 2.8rem;
+    padding: 0 .8rem 0;
+    
+}
+
+.logo-btn a{
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+
+footer .logo-btn{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer .footer-btn{
+    background: var(--black);
+    color: white;
+    border: 2px solid white;
+    width: 12rem;
+}
+
+.footer-links{
+    display: grid;
+    grid-template-columns:20% 20% 20%  40%;
+    gap:-3rem;
+    padding: 3rem 0 3rem;
+    
+}
+
+.footer-links ul li a{
+    color: white;
+    font-size: 1.1rem;
+    
+}
+
+.footer-links ul li{
+    margin-top: .5rem;
+}
+
+.footer-links ul{
+    margin-top: 1.5rem;
+}
+.footer-links ul .main{
+    font-size: 1rem;
+    color: grey;
+
+}
+.border{
+    height: 1px;
+    border: 1px sloid rgb(164, 161, 161);
+    background: white;
+    margin: 1rem 0 1rem;
+}
+
+footer .social-media{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: -12rem;
+}
+
+footer .social-media i{
+    width: 2rem;
+    height: 2rem;
+    background: var(--black);
+    color: white;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: 2px solid white;
+    text-align: center;
+    padding: .3rem;
+    margin-left: 1rem;
+   
+}
+
+footer p{
+    display: flex;
+    justify-content: end;
+}
+
+.to-display{
+    display: none;
+}
+
+
+/* tablet */
+
+@media screen and (max-width:1024px){
+    section{
+        padding: 1rem 1rem 1rem;
+    }
+    h1{
+      
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    
+    h2{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    nav  ul{
+        display: none;
+    }
+
+    nav .logo{
+        padding: 0 1rem;
+        font-size: .6rem;
+    }
+    .container-nav{
+        width: 100%;
+    }
+    .container-nav .fa-bars{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -1.5rem;
+    }
+
+
+
+
+
+    /* main */
+
+    main{
+        padding: 1.5rem 12rem 0;
+    }
+
+    .swiper-wrapper{
+        display: none;
+    }
+    .swiper-wrapper-two{
+        display: block;
+    }
+
+    .swiper-slide{
+        padding-bottom: 5rem;
+        width: 100%;
+        height: 90vh;
+    
+       
+    }
+    .swiper-slide img{
+       
+        object-fit: cover;
+       
+    }
+    
+    
+    .image{
+        position: relative;
+    }
+    .slide-info{
+        left: 2rem;
+        padding-top: 3rem;
+        position: absolute;
+        
+    }
+    .slide-info p{
+        font-size: 1rem;
+        
+    }
+    
+    
+    /* second */
+   
+    
+    .second-section h1{
+        font-size: 1.8rem;
+    }
+    
+    .second{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .second .title{
+        margin-top: -12rem;
+       
+    }
+    .second .title .second-btn{
+        border: 2px solid black;
+        width: 100%;
+        background: transparent;
+        margin-top: 2rem;
+    }
+    
+    
+    .second .image img{
+        width: 100%;
+        height: 100vh;
+        border-radius: .9rem;
+    
+    }
+
+    /* third */
+
+    .third{
+        padding: 2rem 1rem;
+    }
+   
+    
+    .third{
+        display: inline;
+       
+    }
+    .card{
+        height: fit-content;
+       
+    }
+    .card:nth-child(2){
+        margin-top: 2rem;
+    }
+
+    .card img{
+        width: 100%;
+       
+    }
+    
+    /* four */
+
+    .four{
+        padding: 0 0 2rem;
+
+    }
+    .four{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .four .image img{
+       position: relative;
+       width: 100%;
+       margin-top: 18rem;
+    }
+    
+    .four aside{
+        width: 90%;
+        height: 300px;
+        padding: 1.5rem;
+        position: absolute;
+        margin: 0 1.5rem;
+    }
+
+    aside .para{
+        font-size: 1.1rem;
+        margin: 1rem 0;
+
+    }
+    
+    .four-btn{
+        width: 100%;
+    }
+
+    /* five */
+   
+    
+    .five{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      
+    }
+     
+    
+    .image-logo img{
+        width: 330px;
+        border-radius: none;
+    
+    }
+    
+    .image-logo{
+        border: 1.5rem ;
+        border-radius: .8rem; 
+    }
+    
+    .five-btn{
+        width: 100%;
+    }
+
+    /* six */
+
+    .six-section{
+        padding: 0 1.5rem 0;
+       
+    }
+    
+    .six p{
+        font-size: 1rem;
+        font-weight: 300;
+        color: black;
+       
+    }
+
+    /* footer */
+    footer{
+        margin-top: 5rem;
+    }
+    
+    
+    .footer-links{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    }
+
+    .footer-links ul:nth-child(3){
+        margin-top: 2rem;
+
+    }
+    
+    .footer-links ul li a{
+        font-size: 1rem;
+    }
+
+    .to-display{
+        height: 1px;
+        border: 1px sloid rgb(164, 161, 161);
+        background: white;
+        margin: 1rem 0 1rem;
+    }
+
+    .not-to-display{
+        display: none;
+    }
+    
+    footer .social-media{
+        margin-left: -1rem;
+        padding: 2rem 0 1rem;
+    }
+
+
+    footer p{
+        display: flex;
+        justify-content: start;
+        padding: 1rem 0 1rem;
+        font-size: 1rem;
+    }
+    
+
+
+}
+
+
+@media screen and (max-width:600px) {
+
+    h1{
+      
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    h2{
+        font-size: 1rem;
+        font-weight: 500;
+    }  
+
+
+    /* main */
+    /* main{
+        margin: 0 0;
+    } */
+
+
+    .slide-info{
+        left: 12%;
+        top: 50%;
+    } 
+    
+    
+    .slide-info p{
+       margin-top: -3rem;
+       margin-left: -1rem;
+       width: 20rem;
+    }
+    
+    .slide-info .marvel-btn{
+        width: 18rem;
+        margin: 1rem 0;
+    }
+
+    /* second */
+
+    .second .title {
+        margin-top: -12rem;
+       
+    }
+    
+    .second .image img{
+        height: 60%;
+    }
+
+    /* third */
+    .third-section{
+        margin-top: -3rem;
+    } 
+    
+    /*  four*/
+
+    .four-section{
+        margin-top: 2rem;
+        padding: 0;
+    }  
+    .four .image img{
+        margin-top: 18rem;
+       
+    }
+    .four aside{
+        height: 380px;
+        margin: 0 1rem;
+        width: 400px;
+    }
+
+    aside .para{
+        font-size: 1rem;
+        font-weight: 200;
+    }
+    
+    aside h2{
+        font-size: 1.5rem;
+    }
+    
+    /* five */
+    .five-section{
+        margin-top: -5rem;
+    }
+
+    .five-section h1{
+        font-size: 2rem;
+    }
+
+    .five{
+        margin: -2rem 0;
+    }
+    
+    .image-logo img{
+        width: 180px;
+        border: 1.8rem solid white;
+        border-radius: .9rem; 
+    
+    }
+
+    /* six */
+    .six p{
+        font-weight: 300;
+    }
+
+
+    /* footer */
+
+    footer{
+        padding: 3rem 2rem;
+    }
+    
+    footer .logo-btn{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    footer .footer-btn{
+        width: 23rem;
+        margin-top: 2.5rem;
+    }
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 50% 50%;
+       
+    }  
+
+    .first-ul li{
+        display: none;
+    } 
+
+    .second-ul li{
+        display: none;
+    } 
+
+    .footer-links .main{
+        color: rgb(170, 169, 169);
+        font-size: 1.5rem;
+       
+    }
+    
+
+    .border:nth-child(2){
+        margin-top: 3rem;
+    }
+
+    
+    footer .social-media{
+        margin-left: -1rem;
+
+    }
+    footer p{
+        justify-content: start;
+        font-size: .9rem;
+    }
+    .to-display{
+        display: block;
+    }
+    
+
+    
+
+
+
+
+     
+    
+}

@@ -1,0 +1,529 @@
+:root{
+    font-family: myfont;
+    src: url(franchise.ttf);
+    
+}
+
+*{
+    margin: 0; padding: 0;
+    /* adds padding and border to actual width and height */
+    box-sizing: border-box; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    /* smoothly animate scroll position */
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    /* to hidden overflow on left and right */
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0;right: 0;
+    background: white;
+    padding: 2rem 6%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    /* specify stack order  higher z index element stack in front*/
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgb(10, 9, 9);
+}
+
+header .logo{
+    font-weight: bolder;
+    font-size: 2rem;
+    color: black;
+   
+}
+
+header span{
+    color: blueviolet;
+}
+
+header nav a{
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
+    color:black;
+    font-weight: 500;
+}
+
+header nav a:hover{
+    color: blueviolet;
+
+}
+
+header .icon a{
+    font-size: 15px;
+    color: black;
+}
+
+header .icon a:hover{
+    color: blueviolet;
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 2rem;
+    color: black;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+header #toggler:checked ~ nav{
+    /* remeber the reading it will diapperas image */
+    clip-path: polygon(0 0, 0% 100%, 0 100%);
+}
+
+/* HOME SECTION STRATS HERE.... */
+
+
+section{
+    padding: 3rem 9%;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./irina-iriser-dt8Q85QOxJM-unsplash.jpg);
+    background-size: cover;
+    background-position: middle;
+}
+
+
+.home .content{
+    max-width: 90rem;
+}
+
+.home .content h3{
+    color: white;
+    font-size: 4rem;
+}
+
+
+.home .content span{
+    font-size: 2rem;
+    color: white;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+
+.home .content p{
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 0;
+    line-height: 1.5;
+
+}
+ 
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    background: white;
+    color: blueviolet;
+    padding: 1rem 1rem;
+    box-shadow: 0 2px 4px 0 black;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: blueviolet;
+    color: white;
+}
+
+/* ABOUT SECTION STARTS HERE... */
+
+
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: rgb(83, 49, 116);
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.about .row .video-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.about .row .video-container video{
+    width: 100%;
+    box-shadow: 0 .5rem 1rem;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.about .row .content{
+    flex: 1 1 40rem;
+}
+
+.about .row .content h3{
+    font-size: 4rem;
+    padding:0 1rem ;
+}
+
+
+.about .row .content h2{
+    font-size: 2.5rem;
+    padding: 0 1rem;
+}
+
+.about .row .content p{
+    font-size: 1.5rem;
+    padding: 2rem 1rem;
+}
+
+
+.v-btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    background: black;
+    color: white;
+    padding: 1rem 1rem;
+    box-shadow: 0 2px 4px 0 blueviolet;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+.v-btn:hover{
+    background: blueviolet;
+    color: white;
+}
+
+/* img section strats here */
+
+.img-container{
+    background: white;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 1.5rem;
+    padding-top: 5rem;
+
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.img-container .image{
+    background: white;
+    padding: 2rem;
+    display:flex ;
+    flex: 1 1 25rem;
+    align-items: center;
+    margin-bottom: 3rem;
+
+
+}
+
+.image  img{
+    width: 270px;
+    height: 200px;
+    padding-bottom: 0;
+    object-fit: cover;
+    box-shadow:  0 .5rem 1rem black;
+}
+
+
+.img-container .info{
+    position: absolute;
+    bottom: 0;
+    padding-top: 0;
+    
+}
+
+.img-container .info h3{
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 0;
+    padding-bottom: .5rem;
+}
+
+
+.img-container .info span{
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-bottom: 5rem;
+
+}
+
+/* products */
+
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .box-container .box{
+    width: 280px;
+    height: 330px;
+    box-shadow:  0 4px 6px 0 black;
+    text-align: center;
+    position: relative;
+    
+}
+
+.products .box-container .box .discount{
+    position: absolute;
+    font-size: 2rem;
+    left: 2rem;
+    top: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+.products .box-container .box .f-img img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+}
+
+.products .box-container .box .f-img .icons{
+    padding-top: 1rem;
+    
+    position: absolute;
+    bottom: 0; left: 0;right: 0;
+    display: flex;
+    justify-content: space-around;
+    background: grey;
+    clip-path: inset(100% 0 0);
+  
+}
+
+.products .box-container .box:hover .f-img .icons{
+    clip-path: inset(0 0 0 0);
+
+}
+
+    
+.products .box-container .box .f-img  .icons a{
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: black;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+   
+}
+
+
+.products .box-container .box .content h3{
+    font-size: 1.3rem;
+    padding:0 .2rem;
+}
+
+.products .box-container .box .content .price{
+    font-size: 1.3rem;
+    padding-top: .2rem;
+}
+
+/* reviews section */
+
+
+
+.review .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.review .box-container .review-star{
+    color: black;
+    font-size: 1.2rem;
+    padding:1rem 0rem;
+}
+
+.review .box-container .box-review p{
+    color: black;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.review .box-container .box-review .user {
+    width: 300px;
+    width: 400px;
+    
+}
+
+.review .box-container .box-review .user img{
+    width: 350px;
+    height: 280px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px 0 black;
+}
+
+.review .box-container .box-review .user h3{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.review .box-container .box-review .user span {
+    font-size: 1.3rem;
+}
+
+
+/* contact form */
+
+.contact-us .c-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: center;
+    
+    
+}
+
+.contact-us .c-container .img-container{
+    left: 0;
+    object-fit: cover;
+    
+}
+
+.contact-us .c-container .contact-form{
+   
+  
+    position: relative;
+}
+
+.contact-us .c-container .contact-form .info .form-info input,textarea{
+    gap: 2rem;
+    width: 30rem;
+    
+    background-color: black;
+    color: white;
+    margin-bottom: 1rem;
+    padding: 2rem .5rem;
+    box-shadow: 0 2px 4px 0 blueviolet;
+    border-radius: .5rem;
+
+}
+
+.contact-us .c-container .contact-form .links{
+    position: absolute;
+    right: -2rem;
+    top: 0rem;
+    display: inline-block;
+    
+
+    
+     
+}
+
+.contact-us .c-container .contact-form .links p,i{
+    padding: .5rem 0;
+    font-size: 1.5rem;
+   
+}
+
+h2{
+    font-size: 1.8rem;
+    padding: 4rem 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+}
+
+@media(max-width:768px){
+    html .fa-bars{
+        display: block;
+    }
+    
+    header nav{
+        /* positioned relative to nearest position ancestor */
+        position: absolute;
+        top: 100%; left: 0;right: 0; 
+        background: rgb(233, 232, 232);
+
+    }
+
+    header .icon{
+        font-size: 15px;
+       
+
+    }
+
+    header nav a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: white;
+        /* imp foe a */
+        display: block;
+    }
+
+    .home .content h3{
+        font-size: 5rem;
+    }
+
+    .home .content span{
+        font-size: 2.5rem;
+    }
+}
+
+
+
+@media(max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+
+}

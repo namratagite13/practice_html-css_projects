@@ -1,0 +1,23 @@
+
+
+.dropdown button{
+    background-color: azure;
+}
+
+
+.dropdown a{
+    display: block;
+    padding: .5rem .5rem;
+
+}
+
+.dropdown .content{
+    position: absolute;
+    background-color: rgb(221, 216, 216);
+    display: none;
+
+}
+
+.dropdown:hover .content{
+    display: block;
+}
